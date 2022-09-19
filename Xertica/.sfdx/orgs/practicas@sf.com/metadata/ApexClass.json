@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0054x000007P41qAAC",
+    "createdByName": "Luis Leyton",
+    "createdDate": "2022-09-17T16:27:01.000Z",
+    "fileName": "classes/PB_Oportunidades.cls",
+    "fullName": "PB_Oportunidades",
+    "id": "01p4x00000SkfREAAZ",
+    "lastModifiedById": "0054x000007P41qAAC",
+    "lastModifiedByName": "Luis Leyton",
+    "lastModifiedDate": "2022-09-17T16:27:01.000Z",
+    "manageableState": "unmanaged",
+    "type": "ApexClass"
+  }
+}

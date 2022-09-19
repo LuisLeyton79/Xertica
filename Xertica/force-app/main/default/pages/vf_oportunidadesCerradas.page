@@ -1,0 +1,35 @@
+<apex:page controller="PB_Oportunidades">
+    <apex:form >
+        <head>
+            <script>
+            function desacargarExcel(){
+                confirm('Desea desacargar el archivo en  Excel?');
+                window.open('/apex/vf_descargaExcelControllers'); 
+            }
+           /*  function descargarPdf(){
+                confirm('Desea desacargar archivo en PDF?');
+                window.open('/apex/vf_descargarPdfControllers'); 
+            } */
+            </script>
+        </head>
+        <body>
+            <apex:commandButton value="descargar a Excel" onclick="desacargarExcel();" oncomplete=""/>
+<!--             <apex:commandButton value="descagar a Pdf" onclick="descargarPdf();" oncomplete=""/>
+ -->            <apex:pageBlock title="Lista de oportunidades" id="listaOportunidades">
+                <apex:pageBlockTable value="{! listaOpurtunidades }" var="list">
+                    <apex:column >
+                        <apex:outputLink value="/apex/vf_descargarPdfControllers?id='{! list.id }'">
+                            {! list.Account.name}
+                        </apex:outputLink>
+                    </apex:column>
+                
+                <apex:column value="{! list.Amount }"/>
+                <apex:column value="{! list.CloseDate }"/>
+                <apex:column value="{! list.Type }"/>
+                <apex:column value="{! list.StageName }"/>
+            </apex:pageBlockTable>
+            </apex:pageBlock>
+        </body>
+    </apex:form>
+    
+</apex:page>

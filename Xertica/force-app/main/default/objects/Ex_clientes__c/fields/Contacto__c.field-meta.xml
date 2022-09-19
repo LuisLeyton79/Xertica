@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contacto__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Campo lookup que relaciona con el objeto contacto</description>
+    <externalId>false</externalId>
+    <label>Contacto</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Exclientes</relationshipLabel>
+    <relationshipName>Exclientes</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

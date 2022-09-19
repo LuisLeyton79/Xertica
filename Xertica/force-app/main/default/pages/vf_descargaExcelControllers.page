@@ -1,0 +1,12 @@
+<apex:page  controller= "PB_Oportunidades" contentType="application/vnd.ms-excel#ListaOportunidades.xls">
+    <apex:pageBlock title="Lista de oportunidades" id="listaOportunidad">
+        <apex:pageBlockTable value="{! listaOpurtunidades }" var="list">
+             <apex:column value="{! list.Name }"/>
+             <apex:column value="{! list.Account.name }"/>
+             <apex:column value="{! list.Amount }"/>
+             <apex:column value="{! list.CloseDate }"/>
+             <apex:column value="{! list.Type }"/>
+             <apex:column value="{! list.StageName }"/>
+        </apex:pageBlockTable>
+     </apex:pageBlock>
+</apex:page>

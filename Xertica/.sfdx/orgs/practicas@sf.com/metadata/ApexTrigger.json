@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0054x000007P41qAAC",
+    "createdByName": "Luis Leyton",
+    "createdDate": "2022-09-17T19:08:12.000Z",
+    "fileName": "triggers/actualizarOportunidades.trigger",
+    "fullName": "actualizarOportunidades",
+    "id": "01q4x000000Kt63AAC",
+    "lastModifiedById": "0054x000007P41qAAC",
+    "lastModifiedByName": "Luis Leyton",
+    "lastModifiedDate": "2022-09-17T19:08:12.000Z",
+    "manageableState": "unmanaged",
+    "type": "ApexTrigger"
+  }
+}

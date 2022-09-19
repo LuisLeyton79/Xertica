@@ -1,0 +1,56 @@
+<template>
+    <lightning-card>
+        <template if:true={obtenerOportunidades.data}>
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-label="Example table of Opportunities with a single column">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate">Opportunity Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" >Account Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" >Account Amount</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate">Close Date</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" >Type</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate">Stage Name</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={obtenerOportunidades.data} for:item="opp">
+                        <tr class="slds-hint-parent" key={opp.id}>
+                            <td data-label="Opportunity Name">
+                                <div class="slds-truncate" title="Cloudhub">
+                                    <a onclick={navigateToRecordViewPage} data-id={opp.Id} >{opp.Name}</a>
+                                </div>
+                            </td>
+                            <td data-label="Account Name">
+                                <div class="slds-truncate" title="Cloudhub">{opp.Account.Name}</div>
+                            </td>
+                            <td data-label="Amount Name">
+                                <div class="slds-truncate" title="Cloudhub">{opp.Amount}</div>
+                            </td>
+                            <td data-label="Opportunity Close Date">
+                                <div class="slds-truncate" title="Cloudhub">{opp.CloseDate}</div>
+                            </td>
+                            <td data-label="Opportunity type">
+                                <div class="slds-truncate" title="Cloudhub">{opp.Type}</div>
+                            </td>
+                            <td data-label="Opportunity Stage Name">
+                                <div class="slds-truncate" title="Cloudhub">{opp.StageName}</div>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </template>
+    </lightning-card>
+</template>

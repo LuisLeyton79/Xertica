@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0054x000007P41qAAC",
+    "createdByName": "Luis Leyton",
+    "createdDate": "2022-09-17T16:50:07.000Z",
+    "fileName": "pages/vf_oportunidadesCerradas.page",
+    "fullName": "vf_oportunidadesCerradas",
+    "id": "0664x00000AZH1BAAX",
+    "lastModifiedById": "0054x000007P41qAAC",
+    "lastModifiedByName": "Luis Leyton",
+    "lastModifiedDate": "2022-09-17T16:50:14.000Z",
+    "manageableState": "unmanaged",
+    "type": "ApexPage"
+  }
+}
